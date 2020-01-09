@@ -5,13 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "Firebase",
-    products: [
-        .library(
-            name: "Firebase",
-            targets: ["Firebase"]),
-    ],
+    platforms: [ .iOS(.v12) ],
     dependencies: [
     ],
+    path: "Firebase",
     targets: [
         .target(
             name: "Firebase",
